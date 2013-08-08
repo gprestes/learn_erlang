@@ -1,18 +1,8 @@
 -module(recursive).
--export([fac/1]).
--export([len/1]).
--export([tail_fac/1]).
--export([tail_len/1]).
--export([duplicate/2]).
--export([tail_duplicate/2]).
--export([reverse/1]).
--export([tail_reverse/1]).
--export([sublist/2]).
--export([tail_sublist/2]).
--export([zip/2]).
--export([lenient_zip/2]).
--export([tail_zip/2]).
--export([tail_lenient_zip/2]).
+-export([fac/1, len/1, tail_fac/1, tail_len/1, duplicate/2,
+         tail_duplicate/2, reverse/1, tail_reverse/1, sublist/2,
+         tail_sublist/2, zip/2, lenient_zip/2, tail_zip/2,
+         tail_lenient_zip/2]).
 
 fac(0) -> 1;
 fac(N) when N>0 -> N*fac(N-1).

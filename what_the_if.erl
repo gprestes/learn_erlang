@@ -1,7 +1,5 @@
 -module(what_the_if).
--export([heh_fine/0]).
--export([oh_good/1]).
--export([help_me/1]).
+-export([heh_fine/0, oh_good/1, help_me/1]).
 
 heh_fine() ->
   if 1 =:= 1 ->
