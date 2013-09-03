@@ -1,0 +1,14 @@
+-module(hotload).
+-compile(export_all).
+
+server(State) ->
+  receive
+    update ->
+      NewState = ?MODULE:upgrade(State),
+      ?MODULE:server(NewState);
+    SomeMessage ->
+      server(State)
+  end.
+
+upgrade(OldState) ->
+  ok.
